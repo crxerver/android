@@ -73,11 +73,24 @@
     }
   }
 
+  // Function to detect if the user is using an Android device
+  function isAndroid() {
+    return /Android/i.test(navigator.userAgent);
+  }
+
   // Call the function to open fullscreen mode when the user interacts with the page
   document.addEventListener("DOMContentLoaded", function() {
-    document.body.addEventListener("click", openFullscreen);
+    // Check if the user is on an Android device
+    if (isAndroid()) {
+      // If Android, open fullscreen mode on user interaction
+      document.body.addEventListener("click", openFullscreen);
+    } else {
+      // If not Android, do nothing (not opening fullscreen mode)
+      console.log("Not an Android device. Fullscreen mode not triggered.");
+    }
   });
 </script>
+
 
 </body>
 </html>
