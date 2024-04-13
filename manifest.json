@@ -1,0 +1,16 @@
+{
+    "name": "motion App",
+    "short_name": "motioncr",
+    "start_url": ".",
+    "display": "fullscreen",
+    "background_color": "#ffffff",
+    "theme_color": "#191E2F",
+    "icons": [
+      {
+        "src": "/myicon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
