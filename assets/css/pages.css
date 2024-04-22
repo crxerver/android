@@ -1,6 +1,7 @@
 body {
     overflow: hidden;
     position: fixed;
+	margin-bottom: 20px;
 }
 
 #container-wrap, #container {
@@ -9,7 +10,6 @@ body {
 
 .page {
     height: 100%;
-	margin-bottom: 20px;
 }
 
 /* Your existing CSS styles remain unchanged below this point */
